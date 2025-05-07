@@ -91,7 +91,86 @@ header #logo{
 }
 
 footer{
-    margin-top: 70vh;
+    background:white;
+    color:#fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+footer p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+#container-contato {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+/* Estilizando o formulário */
+.contato {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.form article.control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#tituloContato{
+    position: fixed;
+    top: 200px;
+    left: 0;
+    width: 100%; /* Para cobrir toda a largura da tela */
+    height: 50px; /* Altura do cabeçalho */
+    color: rgb(17, 17, 17); /* Cor do texto */
+    text-align: center; /* Centralizar o texto */
+    z-index: 100; /* Para garantir que o texto esteja na frente */
+    font-size: xx-large;
 }
