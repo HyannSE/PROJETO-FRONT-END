@@ -34,8 +34,8 @@ body{
     animation:efeito 1s ease-in-out ;
 }
 
-#texto{
-    font-size: 1.5rem;
+.texto{
+    font-size: 3rem;
     animation: efeito 1s ease-in-out;
     opacity: 0;
 }
@@ -164,8 +164,8 @@ button:hover {
 }
 
 #tituloContato{
-    position: fixed;
-    top: 200px;
+    position: absolute;
+    top: 150px;
     left: 0;
     width: 100%; /* Para cobrir toda a largura da tela */
     height: 50px; /* Altura do cabeçalho */
