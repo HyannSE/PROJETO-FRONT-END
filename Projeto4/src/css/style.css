@@ -115,62 +115,77 @@ footer p{
     margin: 0;
 }
 
-/* Estilizando o formulário */
-.contato {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* CONTATO */
+
+#container-contato{
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.contato{
+    background-image: linear-gradient(#0056b3,#090840);
     width: 500px;
+    height: 550px;
+    border-radius: 20px;
+}
+.form{
+    padding: 0 40px 30px;
 }
 
-.form article.control {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
+.control{
+    margin: 20px;
+    padding-bottom: 20px;
     position: relative;
 }
 
-label {
-    margin-bottom: 5px;
-    font-weight: bold;
+.control label{
+    margin-top: 20px;
+    display: inline;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color:#fff;
+    text-transform: uppercase;
 }
-
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-}
-
-input:focus, textarea:focus {
-    border-color: #007bff;
-}
-
-button {
+.control input{
+    border: 2px solid #555;
+    border-radius: 10px;
     width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    height: 40px;
+    padding: 15px;
 }
 
-button:hover {
-    background-color: #0056b3;
+#descricao{
+    width: 370px;
+    height: 100px;
+    border-radius: 10px;
+}
+.form button{
+    width: 80%;
+    height: 40px;
+    background: green;
+    color:#fff;
+    border-radius: 20px;
+    margin-left: 40px;
 }
 
-#tituloContato{
+.form button:hover{
+    background: plum;
+    color:#090840;
+    box-shadow: 10px 10px 10px plum;
+}
+.form input:hover{
+    box-shadow: 10px 10px 10px #fff;
+}
+
+.control i{
     position: absolute;
-    top: 150px;
-    left: 0;
-    width: 100%; /* Para cobrir toda a largura da tela */
-    height: 50px; /* Altura do cabeçalho */
-    color: rgb(17, 17, 17); /* Cor do texto */
-    text-align: center; /* Centralizar o texto */
-    z-index: 100; /* Para garantir que o texto esteja na frente */
-    font-size: xx-large;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+.control small{
+    position: absolute;
+    margin-top: 5px;
+    visibility: hidden;
 }

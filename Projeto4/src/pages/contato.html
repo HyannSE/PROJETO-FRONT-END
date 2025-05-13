@@ -9,7 +9,7 @@
 <body>
     <!-- Cabeçalho da página -->
     <header>
-        <img src="../assets/logo.gif" alt="Logo" id="logo">
+        <img src="" alt="Logo" id="logo">
         <nav>
             <ul>
                 <li><a href="../../index.html">Home</a></li>
@@ -24,35 +24,38 @@
             <input type="button" class="cor" onclick="trocar('#fbff24')">
         </div>
      </header>
+
      <main id="container-contato">
-        <div><h2 id="tituloContato">Quer receber mais informacoes e sempre ficar atualizado? Cadastre-se! <h2></div>
         <div class="contato">
             <form class="form" id="form">
+
                 <article class="control">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome">
-                    <i class="suceso-img"><img src="./src/assets/sucesso.svg"></i>
-                    <i class="erro-img"><img src="../assets/erro.svg"></i>
-
+                    <i class="error"><img src="../assets/erro.svg"></i>
+                    <small></small>
                 </article>
 
-                <article class="control">
+                <article class="control">    
                     <label for="email">Email</label>
-                    <textarea type="text" id="descricao"></textarea>
-                    <i class="suceso-img"><img src="./src/assets/sucesso.svg"></i>
-                    <i class="erro-img"><img src="../assets/erro.svg"></i>
-
+                    <input type="email" id="email">
+                    <i class="error"><img src="../assets/erro.svg"></i>
+                    <small></small>
                 </article>
 
-                <button type="submit" id="botaoEnviar" onclick="validar()">ENVIAR</button>                
+                <article class="control">    
+                    <label for="descricao">Descrição</label>
+                    <textarea type="text" name="descricao" id="descricao"></textarea>
+                    <i class="error"><img src="../assets/erro.svg"></i>
+                    <small></small>
+                </article>      
+
+                <button type="submit" onclick="validar()">ENVIAR</button>                
             </form>
         </div>
      </main>
-     <footer>
-        <p>&copy; 2025 - Todos os direitos reservados</p>
-      </footer>
-      <!-- Chamando Java Script Externo -->
-      <script src="../js/contato.js"></script>
-</body>
-</body>
+
+    <!-- CHAMANDO O SCRIPT CONTATO EXTERNO -->
+     <script src="../js/contato.js"></script>
+    </body> 
 </html>
